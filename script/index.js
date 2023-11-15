@@ -19,7 +19,7 @@ async function getCoin() {
     const smcoin = qntd * data.conversion_rates[coin2]
     const formattext = smcoin.toFixed(2)
 
-    result_label.innerHTML = `${coin2} ${formattext}`
+    result_label.innerHTML = `Cotação atual: ${qntd} ${coin1} = ${formattext} ${coin2}`
 }
 
 const inputCoin = document.getElementById("selectCoin1")
