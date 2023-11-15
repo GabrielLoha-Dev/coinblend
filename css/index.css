@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: quicksand;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 3px;
+    font-size: .5pc;
+    backdrop-filter: blur(2px);
+}
+
+/* main */
+
+body{
+    background-image: url(../assets/ImageBack.png);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    color: var(--color_text);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(30px);
+    padding: 30px;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 1pc;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none; 
+    max-width: 80%;
+  }
+  
+  select option{
+    background: #0e5263;
+    opacity: .5;
+  }
+
+  .cvt-1, .cvt-2{
+    margin-bottom: 30px;
+  }
+  
+#btn-convert{
+    background-color: #c06329;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    transition: .3s;
+    cursor: pointer;
+}#btn-convert:hover{
+    opacity: .5;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.459);
+    font-size: .8pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+#input-qnt{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+
+#result{
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .container{
+        padding: 20px;
+        width: 70%;
+    }
+}
