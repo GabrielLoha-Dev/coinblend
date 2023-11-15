@@ -129,5 +129,6 @@ footer {
     .container{
         padding: 20px;
         width: 70%;
+        backdrop-filter: blur(30px);
     }
 }
