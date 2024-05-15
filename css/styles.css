@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+  font-family: Nunito;
+  margin: 0;
+  padding: 0;
+}
+
+/* FORMATAÇÃO DISPLAY */
+
+#hist, #sobre{
+  display: none;
+}
+
+.container-fluid{
+  color: red;
+}
+
+.hist, .calc, .sobre{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card{
+  width: 100%;
+}
+
+.cc{
+  width: 80%;
+}
+
+.selects{
+  display: flex;
+}
+
+#select1, #select2{
+  margin: 30px;
+}
+
+.results{
+  display: flex;
+}.results input{
+  margin: 30px;
+}
+
+#btn-convert{
+  margin-left: 30px;
+}
+
+#btn-clean{
+  margin-top: 10px;
+}
+
+#card-hist{
+  height: 60vh;
+}
+
+#card-hist2{
+  overflow-y: scroll;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #00000081;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: .6pc;
+}
+
+/* respons */
+
+@media screen and (max-width: 900px){
+    *{
+      font-size: .8pc;
+    }.results input{
+      margin: 10px;
+    }#select1, #select2, #btn-convert{
+      margin: 10px;
+    }
+
+    .col-lg-8{
+      width: 80%;
+    }
+}
+
+
+/* codding by Gabriel Loha */
